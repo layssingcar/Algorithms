@@ -28,10 +28,13 @@ public class P2751 {
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(br.readLine());
         }
-
         Arrays.sort(arr);
+
+        // System.out.println() 반복 호출 속도 개선
+        StringBuilder sb = new StringBuilder();
         for (int num : arr) {
-            System.out.println(num);
+            sb.append(num).append('\n');
         }
+        System.out.print(sb);
     }
 }
